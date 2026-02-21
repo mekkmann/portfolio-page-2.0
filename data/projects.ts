@@ -16,7 +16,7 @@ export const projects: Project[] = [
         tech: ["Next.js", "TypeScript", "Tailwind"],
         highlights: ["Built using App Router", "Reusable Component Structure", "Responsive Layout"],
         status: "wip",
-        github: "Placeholder"
+        github: "https://github.com/mekkmann/portfolio-page-2.0"
     },
     {
         title: "Sonar Scout",
