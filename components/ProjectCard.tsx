@@ -5,10 +5,12 @@ export function ProjectCard({ project } : { project: Project}) {
     return (
         <div className="border rounded-2xl p-6 shadow-md hover:shadow-xl hover:scale-101 transition-scale duration-200 ease-in-out ">
             
-            <h3 className="font-semibold text-lg mb-2">
-                {project.title} 
+            <div className="flex items-center mb-2">
+                <h3 className="font-semibold text-lg">
+                    {project.title} 
+                </h3> 
                 <StatusBadge status={project.status}/>
-            </h3> 
+            </div>
                 
 
             <p className="text-gray-600 mb-4">{project.description}</p>
