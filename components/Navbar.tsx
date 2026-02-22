@@ -15,7 +15,7 @@ export function Navbar() {
           Pontus Alexander Liljekvist
         </Link>
 
-        <div className="flex gap-6 text-sm">
+        <div className="flex text-sm">
           {navItems.map((item) => (
             <Link
               key={item.href}
