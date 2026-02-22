@@ -3,7 +3,7 @@ import { StatusBadge } from "./StatusBadge";
 
 export function ProjectCard({ project } : { project: Project}) {
     return (
-        <div className="border rounded-2xl p-6 hover:shadow-lg transition-shadow duration-200">
+        <div className="border rounded-2xl p-6 shadow-md hover:shadow-xl hover:scale-101 transition-scale duration-200 ease-in-out ">
             
             <h3 className="font-semibold text-lg mb-2">
                 {project.title} 
