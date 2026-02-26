@@ -1,4 +1,8 @@
+'use client';
+
 import Link from "next/link";
+import clsx from 'clsx';
+import { usePathname } from "next/navigation";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -8,6 +12,8 @@ const navItems = [
 ];
 
 export function Navbar() {
+  const pathname = usePathname();
+
   return (
     <nav className="border-b">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
@@ -20,7 +26,12 @@ export function Navbar() {
             <Link
               key={item.href}
               href={item.href}
-              className="text-gray-600 hover:text-black hover:bg-gray-200 px-4 py-2 rounded-lg transition"
+              className={clsx(
+                "text-gray-600 hover:text-black hover:bg-gray-200 px-4 py-2 rounded-lg transition",
+                {
+                  "bg-gray-200 text-black" : pathname === item.href
+                }
+              )}
             >
               {item.label}
             </Link>
