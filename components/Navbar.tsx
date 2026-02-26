@@ -1,7 +1,6 @@
 'use client';
 
 import Link from "next/link";
-import clsx from 'clsx';
 import { usePathname } from "next/navigation";
 
 const navItems = [
@@ -22,20 +21,32 @@ export function Navbar() {
         </Link>
 
         <div className="flex text-sm">
-          {navItems.map((item) => (
+          {navItems.map((item) => {
+            // disabled link (page user is on)
+            const isActive = pathname === item.href;
+            if (isActive) {
+              return (
+                <span
+                  key={item.href}
+                  className="text-gray-600 bg-gray-200 px-4 py-2 rounded-lg transition"
+                >
+                  {item.label}
+                </span>
+              )
+            };
+
+            // active link (page user can go to)
+            return (
             <Link
               key={item.href}
               href={item.href}
-              className={clsx(
-                "text-gray-600 hover:text-black hover:bg-gray-200 px-4 py-2 rounded-lg transition",
-                {
-                  "bg-gray-200 text-black" : pathname === item.href
-                }
-              )}
+              className=
+                "text-gray-600 hover:text-black hover:bg-gray-200 px-4 py-2 rounded-lg transition"
             >
               {item.label}
             </Link>
-          ))}
+            );
+          })}
         </div>
       </div>
     </nav>
