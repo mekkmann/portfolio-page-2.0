@@ -3,9 +3,13 @@ import Link from "next/link";
 export function Hero() {
     return (
         <main className="max-w-3xl mx-auto p-6 text-center mt-20">
-            <h1 className="text-4xl font-bold mb-12">
+            <h1 className="text-4xl font-bold mb-2">
                 Hello, I'm Pontus Alexander Liljekvist
             </h1>
+
+            <h2 className="text-2xl mb-10 text-gray-700">
+                Also known as Mekkmann 
+            </h2>
 
             <div className="text-lg text-gray-700 mb-12 space-y-6">
                 <div>
