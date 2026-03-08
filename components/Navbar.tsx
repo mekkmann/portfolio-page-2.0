@@ -14,7 +14,7 @@ export function Navbar() {
   const pathname = usePathname();
 
   return (
-    <nav className="border-b">
+    <nav className="border-b top-0 sticky bg-white">
       <div className="max-w-3xl mx-auto px-6 h-14 flex items-center justify-between">
         <Link href="/" className="font-semibold">
           Pontus Alexander Liljekvist
