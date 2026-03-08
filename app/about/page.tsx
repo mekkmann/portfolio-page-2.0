@@ -53,7 +53,7 @@ export default function AboutPage () {
                 <p>
                     I like building things, experimenting with new ideas, and finding ways to improve both my skills and everyday life.
                 </p>
-                <p>
+                <p className="mt-12">
                     You can explore my{" "}
                     <Link href="/projects" className="text-blue-600 hover:underline">
                         projects
