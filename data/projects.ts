@@ -11,21 +11,29 @@ export type Project = {
 
 export const projects: Project[] = [
     {
-        title: "Portfolio Website",
-        description: "Personal portfolio website built with Next.js and Tailwind",
-        tech: ["Next.js", "TypeScript", "Tailwind"],
-        highlights: ["Built using App Router", "Reusable Component Structure", "Responsive Layout"],
-        status: "wip",
-        github: "https://github.com/mekkmann/portfolio-page-2.0"
-    },
-    {
         title: "Sonar Scout",
-        description: "Sonar Scout was made by a team of 6 developers from 5 different countries who all met at Spelkollektivet, a co-living space for game developers located in Sweden",
+        description: "Sonar Scout was made by a team of 6 developers from 5 different countries who all met at Spelkollektivet, a co-living space for game developers located in Sweden.",
         tech: ["Unity", "C#"],
         highlights: ["Full Development Experience", "Steam Deployment", "Published by Spelkollektivet"],
         status: "live",
         liveLink: "https://store.steampowered.com/app/3137740/Sonar_Scout/",
         liveLinkPlatform: "Steam",
+    },
+    {
+        title: "Habit Tracker Placeholder Name",
+        description: "Inspired by the open sourced Loop Habit Tracker with the addition of a live time spent tracker for habits.",
+        tech: ["Expo", "TypeScript"],
+        highlights: ["React Native"],
+        status: "wip",
+        
+    },
+    {
+        title: "Portfolio Website",
+        description: "Personal portfolio website (this one) built with Next.js and Tailwind.",
+        tech: ["Next.js", "TypeScript", "Tailwind"],
+        highlights: ["Built using App Router", "Reusable Component Structure", "Responsive Layout"],
+        status: "live",
+        github: "https://github.com/mekkmann/portfolio-page-2.0"
     },
     {
         title: "Floop",
