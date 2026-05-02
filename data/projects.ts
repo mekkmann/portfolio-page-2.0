@@ -11,6 +11,13 @@ export type Project = {
 
 export const projects: Project[] = [
     {
+        title: "Whack them all! (Placeholder)",
+        description: "A 3D Whac-a-mole inspired roguelike with some story/lore, whacky ideas and fun execution. ",
+        tech: ["Godot", "GDScript"],
+        highlights: ["UI/UX Experience", "Working with 3D artists"],
+        status: "wip",
+    },
+    {
         title: "Sonar Scout",
         description: "Sonar Scout was made by a team of 6 developers from 5 different countries who all met at Spelkollektivet, a co-living space for game developers located in Sweden.",
         tech: ["Unity", "C#"],
