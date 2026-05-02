@@ -28,7 +28,7 @@ export default function AboutPage () {
                 <p>
                     On the web side, I work primarily with JavaScript/TypeScript,
                     Next.js, C#, and Python, creating clean, maintainable, and user-focused applications.
-                    In game development, I use Unity and C# to design smaller games centered around
+                    In game development, I use Unity and C# (now learning Godot and GDScript) to design smaller games centered around
                     satisfying mechanics and engaging gameplay loops.
                 </p>
 

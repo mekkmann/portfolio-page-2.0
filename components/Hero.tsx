@@ -21,6 +21,7 @@ export function Hero() {
                 <div>
                     <p className="font-semibold">Junior Game Developer</p>
                     <p>Specializing in C# and Unity.</p>
+                    <p>Learning GDScript and Godot</p>
                     <p>I build games focused on addictive game loops.</p>
                 </div>
             </div>
